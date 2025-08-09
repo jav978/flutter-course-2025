@@ -4,6 +4,19 @@ void main(List<String> args) {
   String nombre = 'Jose Vasquez';
   bool esEstudiante = true;
 
+  //dynamic == null; // Variable dinámica, puede ser de cualquier tipo
+
+  dynamic errorMessage = 'No se pudo cargar el Pokémon';
+
+  errorMessage = null;
+  errorMessage = false;
+  errorMessage = [1, 2, 3];
+  errorMessage = {'error': 'No se pudo cargar el Pokémon'};
+  errorMessage = {1,2,3,4,5,6,7};
+  errorMessage = () => {1,2,3,4,5,6,7};
+  errorMessage = (1,2,3,4,5,6,7);
+
+
   final String pokemon = 'Pikachu';
   final int hp = 100;
   final String tipo = 'Eléctrico';
@@ -27,5 +40,6 @@ void main(List<String> args) {
   ¿Está vivo? $isAlive
   Habilidades: ${abilities.join(', ')}
   Sprites: ${sprites.join(', ')}
+  Error Message: $errorMessage
   """);
 }
